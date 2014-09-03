@@ -1,10 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Test</title>
+    <meta charset="UTF-8">
+    <title>Simple Addition & Subtraction</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
+<div class="container">
 
+    <div class="row clearfix">
+        <div class="col-md-12">
+            <h1>Adder / Subtractor</h1>
+        </div>
+
+        <div class="col-md-7 col-md-offset-5">
+            <form class="form-horizontal">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-1 control-label">X =</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" id="value-x" placeholder="number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-1 control-label">Y =</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" id="value-y" placeholder="number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-11 col-md-offset-1">
+                            <button type="button" class="btn btn-default btn-sm" id="button-addition">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm" id="button-subtraction">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12">
+                <p class="result"></p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
